@@ -15,3 +15,6 @@ To keep the demo simple the custom element is only a widget displaying a pre-def
 - The functionality of the custom element is defined in `FancyParagraph.js`. The template which is used to populate the shadow DOM of `fancy-paragraph` is loaded from here dynamically from an extra file called `fancy-paragraph.html`.
 
 - Finally the html template refers to a css file `fancy-header.css` via the standard `<link rel="stylesheet" ...>` method.
+
+## LoadTemplate
+A first shot to get the template file read via the async fetch interface. This makes a kind of a hack necessary to get the result back to the caller. Though I do not really like it this is the only way I was able to get the problem solved.
